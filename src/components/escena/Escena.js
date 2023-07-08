@@ -12,13 +12,13 @@ import ReactDOM from 'react-dom';
 //     )
 // }
 
-
 // Exercici 2 - Sprint 6
 const Escena = ({sentences}) => {
+
     return (
         <div>
             <p>
-            {sentences}
+                {sentences}
             </p>
         </div>
     )
