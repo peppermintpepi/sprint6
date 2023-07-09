@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { StyledBorder } from '../../StyledProps';
 
-// Exercici 1 - Sprint 6
+// Exercici 1 - Sprint 6 --> afegim la frase directament al paràgraf
 // const Escena = () => {
 //     return (
 //         <div>
@@ -12,15 +12,20 @@ import ReactDOM from 'react-dom';
 //     )
 // }
 
-// Exercici 2 - Sprint 6
-const Escena = ({sentences}) => {
+// Exercici 2 - Sprint 6  --> hi pasem un prop (sentences) per imprimir per pantalla des-de l'arxiu App.js
+// const Escena = ({sentences}) => {
 
-    return (
-        <div>
-            <p>
-                {sentences}
-            </p>
-        </div>
-    )
+//     return (
+//         <div>
+//             <p>
+//                 {sentences}
+//             </p>
+//         </div>
+//     )
+// }
+
+//Exercici 3 i 4 - Sprint 6  --> afegim l'estil directament l'estil al prop i també seleccionem la frase a pintar
+const Escena = ({sentences, isSelected}) => {
+    return <StyledBorder isSelected={isSelected}>{sentences}</StyledBorder>;
 }
 export default Escena;
