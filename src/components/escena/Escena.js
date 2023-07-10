@@ -24,7 +24,7 @@ import { StyledBorder } from '../../StyledProps';
 //     )
 // }
 
-//Exercici 3 i 4 - Sprint 6  --> afegim l'estil directament l'estil al prop i també seleccionem la frase a pintar
+//Exercici 3 i 4 - Sprint 6  --> afegim l'estil directament al prop i també seleccionem la frase a pintar
 const Escena = ({sentences, isSelected}) => {
     return <StyledBorder isSelected={isSelected}>{sentences}</StyledBorder>;
 }
